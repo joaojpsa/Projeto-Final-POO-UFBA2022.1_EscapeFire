@@ -7,7 +7,7 @@ import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Florest extends World {
-
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -18,28 +18,28 @@ public class Florest extends World {
         addObject(new Score(), 300, 100);
         addObject(new Parrot(), 151, 196);
         setBackground("images/floresta2.png");
+        Greenfoot.playSound("sounds/theme.mp3");
+        
     }
 
     public void act() {
-
-        if (Greenfoot.getRandomNumber(400) < 1 || (Greenfoot.getRandomNumber(400) < 3)) {
+        
+        if (Greenfoot.getRandomNumber(400) < 1) {
 
             addObject(new Fire(), 408, 284);
             addObject(new Vulture(), 570, 15);
-            addObject(new Fire(), 539, 334);
-            addObject(new Vulture(), 552, 91);
-            Greenfoot.playSound("sounds/theme.mp3");
+            addObject(new Mushroom(), 370, 47);
+                       
         }
         if (Greenfoot.getRandomNumber(400) < 2) {
 
             addObject(new Cloud(), 536, 52);
-
-        }
-        if (Greenfoot.getRandomNumber(400) < 1) {
-
+            addObject(new Fire(), 539, 334);
             addObject(new Mushroom(), 250, 47);
+            addObject(new Vulture(), 552, 91);
 
         }
+        
 
     }
 
@@ -48,4 +48,5 @@ public class Florest extends World {
         Greenfoot.playSound("sounds/end.wav");
         Greenfoot.stop();
     }
+   
 }

@@ -81,8 +81,4 @@ public class Parrot extends Actor
         }
     }
     
-    
-   
-    
-    
 }

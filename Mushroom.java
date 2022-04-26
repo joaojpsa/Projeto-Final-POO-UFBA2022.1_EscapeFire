@@ -23,10 +23,16 @@ public class Mushroom extends Actor
     }
     public void fall(){
         setLocation(getX(), getY() + velDown);
-        if(getY() >= 399 || isTouching(Parrot.class)){
+        
+        if(getY() >= 399){
+            ((Florest) getWorld()).removeObject(this);
+        }
+        else if(isTouching(Parrot.class)){
             Greenfoot.playSound("sounds/eat.mp3");
             Score.add();
             ((Florest) getWorld()).removeObject(this);
         }
+        
     }
+    
 }
