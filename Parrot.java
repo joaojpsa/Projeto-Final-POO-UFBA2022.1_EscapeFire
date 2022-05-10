@@ -10,7 +10,7 @@ public class Parrot extends Actor
 {
     /*construtor*/
     public Parrot(){
-        setImage("parrot.png");
+        setImage("pDireita.png");
     }
     private int up = 7;
     private int velDown = 1;
@@ -47,9 +47,11 @@ public class Parrot extends Actor
     private void moveParrot(){
         if(Greenfoot.isKeyDown("right")){
             move(+ 1);
+            setImage(new GreenfootImage("pDireita.png"));
         }
          if(Greenfoot.isKeyDown("left")){
             move(-1);
+            setImage(new GreenfootImage("pEsquerda.png"));
         }
         if(Greenfoot.isKeyDown("up")){
             moveUp();

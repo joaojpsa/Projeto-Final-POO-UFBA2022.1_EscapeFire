@@ -10,7 +10,7 @@ public class Vulture extends Actor
 {
     /*construtor*/
     public Vulture(){
-        setImage("vulture.png");
+        setImage("urubu.png");
     }
     /**
      * Act - do whatever the vulture wants to do. This method is called whenever

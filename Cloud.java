@@ -10,7 +10,7 @@ public class Cloud extends Actor
 {
     /*construtor*/
     public Cloud(){
-        setImage("images/cloud.png");
+        setImage("nuvem.png");
     }
     /**
      * Act - do whatever the Cloud wants to do. This method is called whenever

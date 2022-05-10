@@ -20,7 +20,7 @@ public class Score extends Actor
     public void act()
     {
         World Florest = getWorld();
-        Florest.showText("SCORE: " + String.valueOf(score), 50, 379);
+        Florest.showText("SCORE: " + String.valueOf(score), 50, 479);
         
         
         // Add your action code here.
