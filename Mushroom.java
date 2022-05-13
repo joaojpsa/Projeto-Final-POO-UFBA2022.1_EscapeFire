@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Mushroom extends Actor
 {
+    //Contrutor do Mushroom
     public Mushroom(){
         setImage("cogumelo.png");
     }
@@ -22,6 +23,7 @@ public class Mushroom extends Actor
         // Add your action code here.
     }
     public void fall(){
+        //metodo para fazer o cogumelo cair do ceu
         setLocation(getX(), getY() + velDown);
         
         if(getY() >= 399){

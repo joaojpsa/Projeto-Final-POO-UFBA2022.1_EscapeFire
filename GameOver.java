@@ -23,7 +23,7 @@ public class GameOver extends Actor
         GreenfootImage image = new GreenfootImage(WIDTH, HEIGHT);
         
         image.setColor(new Color(0, 0, 0, 160));
-        image.fillRect(0, 0, WIDTH, HEIGHT);
+        image.fillRect(5, 5, WIDTH, HEIGHT);
         image.setColor(new Color(255, 255, 255, 100));
         image.fillRect(5, 5, WIDTH, HEIGHT);
         
