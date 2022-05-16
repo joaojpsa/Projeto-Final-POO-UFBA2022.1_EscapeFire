@@ -8,11 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Score extends Actor
 {
-    
-    /**
-     * Act - do  whatever the Score wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public static int score;
     public Score(){
         score = 0;
@@ -21,9 +16,7 @@ public class Score extends Actor
     {
         World Florest = getWorld();
         Florest.showText("SCORE: " + String.valueOf(score), 60, 479);
-        
-        
-        // Add your action code here.
+
     }
     public static void add(){
         score ++;

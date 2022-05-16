@@ -16,8 +16,9 @@ public class Parrot extends Actor
     private int velDown = 1;
     private int score;
     
-    private boolean isburned = false;
-    private boolean isvulturetouch = false;
+    //private boolean isburned = false;
+    //private boolean isvulturetouch = false;
+    private boolean istouch = false;
     
     
     /**
@@ -27,8 +28,9 @@ public class Parrot extends Actor
     public void act()
     {
         fall();
-        isBurned();
-        isVultureTouch();
+        isTouch();
+        //isBurned();
+        //isVultureTouch();
         moveParrot();
         /*if(Greenfoot.mousePressed(null)){
             MouseInfo mouse = Greenfoot.getMouseInfo();
@@ -67,7 +69,7 @@ public class Parrot extends Actor
         setLocation(getX(), getY() - up);
     }
     
-    public void isBurned(){
+    /*public void isBurned(){
         isburned = true;
         if(isTouching(Fire.class)){
             Greenfoot.playSound("sounds/death.wav");
@@ -78,6 +80,17 @@ public class Parrot extends Actor
     public void isVultureTouch(){
         isvulturetouch = true;
         if(isTouching(Vulture.class)){
+            Greenfoot.playSound("sounds/death.wav");
+            ((Florest) getWorld()).gameOver();
+        }
+    }*/
+    public void isTouch(){
+        istouch = true;
+        if(isTouching(Fire.class)){
+            Greenfoot.playSound("sounds/death.wav");
+            ((Florest) getWorld()).gameOver();
+        }
+        else if(isTouching(Vulture.class)){
             Greenfoot.playSound("sounds/death.wav");
             ((Florest) getWorld()).gameOver();
         }
