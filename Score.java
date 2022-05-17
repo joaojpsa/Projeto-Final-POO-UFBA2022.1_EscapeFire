@@ -14,8 +14,8 @@ public class Score extends Actor
     }
     public void act()
     {
-        World Florest = getWorld();
-        Florest.showText("SCORE: " + ponto, 60, 479);
+        World florest = getWorld();
+        florest.showText("SCORE: " + ponto, 60, 479);
 
     }
     public static void add(){
