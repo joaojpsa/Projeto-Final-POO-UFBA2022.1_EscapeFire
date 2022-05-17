@@ -15,11 +15,16 @@ public class Score extends Actor
     public void act()
     {
         World florest = getWorld();
-        florest.showText("SCORE: " + ponto, 60, 479);
+        setImage("cogumeloMENOR.png");
+        florest.showText("" + ponto, 55, 475);
 
     }
     public static void add(){
         ponto ++;
-    }    
+    }
+    public int getPonto(int pontos){
+        pontos = ponto;
+        return pontos;
+    }
     
 }
