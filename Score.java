@@ -8,18 +8,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Score extends Actor
 {
-    public static int score;
+    public static int ponto;
     public Score(){
-        score = 0;
+        ponto = 0;
     }
     public void act()
     {
         World Florest = getWorld();
-        Florest.showText("SCORE: " + String.valueOf(score), 60, 479);
+        Florest.showText("SCORE: " + ponto, 60, 479);
 
     }
     public static void add(){
-        score ++;
+        ponto ++;
     }    
     
 }

@@ -15,5 +15,4 @@ comment5.params=
 comment5.target=void\ moveUp()
 comment6.params=
 comment6.target=void\ isTouch()
-comment6.text=public\ void\ isBurned(){\r\n\ \ \ \ \ \ \ \ isburned\ \=\ true;\r\n\ \ \ \ \ \ \ \ if(isTouching(Fire.class)){\r\n\ \ \ \ \ \ \ \ \ \ \ \ Greenfoot.playSound("sounds/death.wav");\r\n\ \ \ \ \ \ \ \ \ \ \ \ ((Florest)\ getWorld()).gameOver();\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ public\ void\ isVultureTouch(){\r\n\ \ \ \ \ \ \ \ isvulturetouch\ \=\ true;\r\n\ \ \ \ \ \ \ \ if(isTouching(Vulture.class)){\r\n\ \ \ \ \ \ \ \ \ \ \ \ Greenfoot.playSound("sounds/death.wav");\r\n\ \ \ \ \ \ \ \ \ \ \ \ ((Florest)\ getWorld()).gameOver();\r\n\ \ \ \ \ \ \ \ }\r\n}
 numComments=7
