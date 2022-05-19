@@ -14,10 +14,11 @@ public class Florest extends World {
         // Create a new world with 700x500 cells with a cell size of 1x1 pixels.
         //classe construtora de Florest
         super(700, 500, 1);
-        addObject(new Score(), 20, 476);
+        addObject(new Score(), 25, 476);
         addObject(new Parrot(), 151, 196);
         setBackground("images/Fdia.png");
         playloop();
+        
         
 
     }
@@ -44,9 +45,9 @@ public class Florest extends World {
         if (Greenfoot.getRandomNumber(700) < 1) {
             addObject(new Vulture(), 552, Greenfoot.getRandomNumber(95));
         }
-        
 
     }
+    
     public void playloop(){
         Greenfoot.playSound("sounds/theme.mp3");
     }

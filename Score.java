@@ -16,7 +16,7 @@ public class Score extends Actor
     {
         World florest = getWorld();
         setImage("cogumeloMENOR.png");
-        florest.showText("" + ponto, 55, 475);
+        florest.showText("" + ponto, 60, 475);
 
     }
     public static void add(){
