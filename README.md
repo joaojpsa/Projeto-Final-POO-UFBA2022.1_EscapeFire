@@ -37,19 +37,19 @@ Seta para direita - Parrot vai para direita
 
 ##### Personagens
 
-![parrot.png](/Users/jeffersonraimon/Documents/images-docs/parrot.png)
+![parrot.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/parrot.png)
 
 Parrot - O papagaio guloso e o protagonista
 
 
 
-![urubu.png](/Users/jeffersonraimon/Documents/images-docs/urubu.png)
+![urubu.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/urubu.png)
 
 Urubu - Antagonistas, não gostam do Parrot
 
 
 
-![fogo.png](/Users/jeffersonraimon/Documents/images-docs/fogo.png)
+![fogo.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/fogo.png)
 
 Foto Místico - Não se importam com nada a não ser queimar tudo o que tiver no seu caminho. **Cuidado!**
 
@@ -63,7 +63,7 @@ Cogumelo - A comida favorita do Parrot (**tente comer todas!**)
 
 #### Estrutura geral do Jogo
 
-![estrutura.png](/Users/jeffersonraimon/Documents/images-docs/estrutura.png)
+![estrutura.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/estrutura.png)
 
 ### **World**
 
