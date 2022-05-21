@@ -55,7 +55,7 @@ Foto Místico - Não se importam com nada a não ser queimar tudo o que tiver no
 
 
 
-![cogumelo.png](/Users/jeffersonraimon/Documents/images-docs/cogumelo.png)
+![cogumelo.png]([/Users/jeffersonraimon/Documents/images-docs/cogumelo.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/cogumelo.png))
 
 Cogumelo - A comida favorita do Parrot (**tente comer todas!**)
 
