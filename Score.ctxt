@@ -7,6 +7,4 @@ comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ add()
-comment4.params=pontos
-comment4.target=int\ getPonto(int)
-numComments=5
+numComments=4

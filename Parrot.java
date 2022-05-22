@@ -21,38 +21,41 @@ public class Parrot extends Actor
      */
     public void act()
     {
+        //chama os metodos da ação do objeto
         fall();
         isTouch();
         moveParrot();
         
     }
-    
+    //método para movimentar o papagaio(direita, esquerda, para cima)
     private void moveParrot(){
+        
         if(Greenfoot.isKeyDown("right")){
             move(+ 1);
             setImage(new GreenfootImage("pDireita.png"));
         }
+        
          if(Greenfoot.isKeyDown("left")){
             move(-1);
             setImage(new GreenfootImage("pEsquerda.png"));
         }
+        
         if(Greenfoot.isKeyDown("up")){
             moveUp();
         }
         
     }
-    
+    //movimenta para baixo(Y). É chamado no metodo act, tornando automático a descida
     public void fall(){
         setLocation(getX(), getY() + velDown);
     }
-    
+    //movimenta para cima(Y)
     public void moveUp(){
         setLocation(getX(), getY() - up);
     }
-    
- 
+    //método para quando tocar nos objetos Fire e Vulture
     public void isTouch(){
-        
+        //condicionais utilizando metodo gameover através de getters e também chamando o metodo de midia de som do Greenfoot
         if(isTouching(Fire.class)){
             Greenfoot.playSound("sounds/death.wav");
             ((Florest) getWorld()).gameOver();
