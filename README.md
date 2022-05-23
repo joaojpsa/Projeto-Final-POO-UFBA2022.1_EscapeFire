@@ -19,8 +19,6 @@ Linguagem de Programação utilizada: Java
 
 Objetivo do jogo: Voar e comer cogumelos, evitar treta com os urubus e passar bem longe do fogo que ameaça a floresta amazônica.
 
-
-
 ### Introdução ao jogo
 
 Conheça o papagaio guloso Parrot, que adora voar e comer cogumelos (muitos). Porém na sua querida floresta está ocorrendo uma terrivel queimada e há diversos urubus na localidade que não gostam dele. Ajude-o a se alimentar com cuidado, evitando o fogo e esses urubus.
@@ -33,33 +31,23 @@ Seta para esquerda - Parrot vai para esquerda
 
 Seta para direita - Parrot vai para direita
 
-
-
 ##### Personagens
 
 ![parrot.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/parrot.png)
 
 Parrot - O papagaio guloso e o protagonista
 
-
-
 ![urubu.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/urubu.png)
 
 Urubu - Antagonistas, não gostam do Parrot
-
-
 
 ![fogo.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/fogo.png)
 
 Fogo Místico - Não se importam com nada a não ser queimar tudo o que tiver no seu caminho. **Cuidado!**
 
-
-
 ![cogumelo.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/cogumelo.png)
 
 Cogumelo - A comida favorita do Parrot (**tente comer todas!**)
-
-
 
 #### Estrutura geral do Jogo
 
@@ -77,7 +65,7 @@ Classe para a criação do nosso cenário. (tamanho da tela, background, element
 
 ```java
 public class Florest extends World {
-   
+
     public Florest() {
         super(700, 500, 1);
         addObject(new Score(), 25, 476);
@@ -120,13 +108,13 @@ playloop();
 
 ```java
 public void act() {
-              
+
         if (Greenfoot.getRandomNumber(500) < 1) {
             addObject(new Cloud(), 536, Greenfoot.getRandomNumber(91));
             addObject(new Fire(), 637, 331);
             addObject(new Vulture(), 570, 15);
             addObject(new Mushroom(), 470, 47);
-                       
+
         }
         if (Greenfoot.getRandomNumber(600) < 1) {
             addObject(new Fire(), 606, 445);
@@ -176,7 +164,7 @@ public void gameOver() {
         addObject(new GameOver("Game Over!"), getWidth() / 2, getHeight() / 2);
         Greenfoot.playSound("sounds/end.wav");
         Greenfoot.stop();
-        
+
     }
 ```
 
@@ -185,5 +173,87 @@ Método para chamar a classe GameOver
 | Tipo        | Método | Descrição                |
 | ----------- | ------ | ------------------------ |
 | static void | stop   | Pausa a execução do jogo |
+
+### Actor
+
+Classe construtora que faz parte do Package Greenfoot.
+
+Utilizada para instanciar os objetos do jogo no mundo
+
+### Cloud e Fire
+
+Classe para criação das núvens
+
+```java
+public class Cloud extends Actor
+{
+   
+    public Cloud(){
+          setImage("nuvem.png");
+    }
+  
+    public void act(){
+            setLocation(getX() -1, getY());
+       
+        if(getX() <= 15){
+            ((Florest) getWorld()).removeObject(this);
+        }
+    }
+
+}
+```
+
+Criação da classe Cloud que herda as propriedades da classe Actor. E criação da classe construtora de Cloud
+
+
+
+```java
+public Cloud(){
+          setImage("nuvem.png");
+    }
+```
+
+Utilizado para referênciar a imagem por meio de arquivo (PNG) utilizando setter
+
+```java
+public void act(){
+            setLocation(getX() -1, getY());
+       
+        if(getX() <= 15){
+            ((Florest) getWorld()).removeObject(this);
+        }
+    }
+```
+
+Método em que será usado para movimentar o objeto (cloud) horizontalmente (eixo X), sentido Direita para Esquerda.
+
+É utilizado uma condicional para remover a núvem na posição menor ou igual a 12px (da tela do jogo)
+
+***A classe Fire utiliza a mesma estrutura da classe Cloud***
+
+```java
+public class Fire extends Actor
+{
+    
+    public Fire(){
+        
+        setImage("fogo.png");
+    }
+    
+    public void act(){
+        
+        setLocation(getX() -1, getY());
+        
+        if(getX() <= 15){
+            ((Florest) getWorld()).removeObject(this);
+        }
+    }
+}
+```
+
+| Tipo | Método                 | Descrição                                                     |
+| ---- | ---------------------- | ------------------------------------------------------------- |
+| void | act();                 | Utilizado para o objeto realizar alguma ação                  |
+| void | setImage("nuvem.png"); | Utilizado para referênciar a imagem por meio de arquivo (PNG) |
 
 
