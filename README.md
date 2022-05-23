@@ -51,7 +51,7 @@ Urubu - Antagonistas, não gostam do Parrot
 
 ![fogo.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/fogo.png)
 
-Foto Místico - Não se importam com nada a não ser queimar tudo o que tiver no seu caminho. **Cuidado!**
+Fogo Místico - Não se importam com nada a não ser queimar tudo o que tiver no seu caminho. **Cuidado!**
 
 
 
