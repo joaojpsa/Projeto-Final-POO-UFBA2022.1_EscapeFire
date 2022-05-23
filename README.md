@@ -180,7 +180,7 @@ Classe construtora que faz parte do Package Greenfoot.
 
 Utilizada para instanciar os objetos do jogo no mundo
 
-### Cloud e Fire
+### Cloud, Fire e Vulture
 
 Classe para criação das núvens
 
@@ -229,7 +229,7 @@ Método em que será usado para movimentar o objeto (cloud) horizontalmente (eix
 
 É utilizado uma condicional para remover a núvem na posição menor ou igual a 12px (da tela do jogo)
 
-***A classe Fire utiliza a mesma estrutura da classe Cloud***
+***As classes Fire e Vulture utilizam a mesmas estruturas da classe Cloud***
 
 ```java
 public class Fire extends Actor
@@ -251,9 +251,205 @@ public class Fire extends Actor
 }
 ```
 
+```java
+public class Vulture extends Actor
+{
+    
+    public Vulture(){
+        
+        setImage("urubu.png");
+    }
+    
+    public void act(){
+        
+        setLocation(getX() -1, getY());
+        
+        if(getX() <= 15){
+            ((Florest) getWorld()).removeObject(this);
+        }
+    }
+}
+```
+
 | Tipo | Método                 | Descrição                                                     |
 | ---- | ---------------------- | ------------------------------------------------------------- |
 | void | act();                 | Utilizado para o objeto realizar alguma ação                  |
 | void | setImage("nuvem.png"); | Utilizado para referênciar a imagem por meio de arquivo (PNG) |
 
+### Game Over
 
+Criação da classe GameOver que herda as propriedades da classe Actor. E criação da classe construtora de GameOver em que recebe como parametro uma String
+
+```java
+public class GameOver extends Actor
+{
+    
+    public static final float SIZE_FONT = 48.0f;
+    public static final int WIDTH = 400;
+    public static final int HEIGHT = 300;
+    
+    public GameOver(String message){
+        makeImage(message);
+    }
+    private void makeImage(String message){
+        GreenfootImage image = new GreenfootImage(WIDTH, HEIGHT);
+        
+        image.setColor(new Color(0, 0, 0, 160));
+        image.fillRect(5, 5, WIDTH, HEIGHT);
+        image.setColor(new Color(255, 255, 255, 100));
+        image.fillRect(5, 5, WIDTH, HEIGHT);
+        
+        Font font = image.getFont();
+        font = font.deriveFont(SIZE_FONT);
+        
+        image.setFont(font);
+        image.setColor(Color.WHITE);
+        image.drawString(message, 60, 100);
+        setImage(image);
+    }
+    
+}
+```
+
+```java
+    public static final float SIZE_FONT = 48.0f;
+    public static final int WIDTH = 400;
+    public static final int HEIGHT = 300;
+```
+
+Constantes utilizadas para definir o tamanho a fonte, a largura e altura da tela Game Over
+
+```java
+public GameOver(String message){
+        makeImage(message);
+    }
+```
+
+Método utilizado para instanciar a mensagem de GameOver
+
+```java
+private void makeImage(String message){
+        GreenfootImage image = new GreenfootImage(WIDTH, HEIGHT);
+        
+        image.setColor(new Color(0, 0, 0, 160));
+        image.fillRect(5, 5, WIDTH, HEIGHT);
+        image.setColor(new Color(255, 255, 255, 100));
+        image.fillRect(5, 5, WIDTH, HEIGHT);
+        
+        Font font = image.getFont();
+        font = font.deriveFont(SIZE_FONT);
+        
+        image.setFont(font);
+        image.setColor(Color.WHITE);
+        image.drawString(message, 60, 100);
+        setImage(image);
+    }
+```
+
+Método para criar a imagem do GameOver
+
+```java
+GreenfootImage image = new GreenfootImage(WIDTH, HEIGHT);
+```
+
+Criado um novo objeto retangulo, utilizando a classe GreenfootImage, com o tamanho de largura e altura definidos anteriormente. 400px e 300px respectivamente.
+
+Sendo utilizado varios métodos dessa classe:
+
+| Tipo | Método                             | Descrição                                                                                                                         |
+| ---- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| void | setColor(new Color(0, 0, 0, 160)); | Especifica a cor que será utilizada, passando os parâmetros de RGB e Alpha                                                        |
+| void | fillRect(5, 5, WIDTH, HEIGHT);     | Especifica como será o preenchimento do retangulo, passando as coordenadas do eixo X e Y e também os tamanhos de largura e altura |
+
+Fonte do texto
+
+```java
+        Font font = image.getFont();
+        font = font.deriveFont(SIZE_FONT);
+```
+
+Criando um novo bjeto fonte utilizando os métodos:
+
+| Tipo | Método                        | Descrição                                            |
+| ---- | ----------------------------- | ---------------------------------------------------- |
+| void | getFont();                    | Obtém a fonte atual do projeto                       |
+| void | deriveFont(SIZE_FONT);        | Define o tamanho da fonte (tipo float)               |
+| void | setFont(font);                | Especifica a fonte atual                             |
+| void | drawString(message, 60, 100); | Desenha a string utilizando cor e fonte especificada |
+
+### Mushroom
+
+Criação da classe Mushroom que herda as propriedades da classe Actor. E criação da classe construtora de Mushroom.
+
+```java
+public class Mushroom extends Actor
+{
+    
+    public Mushroom(){
+        setImage("cogumelo.png");
+    }
+   
+    private int velDown = 1;
+    
+    public void act()
+    {
+        
+        fall();
+        
+    }
+    public void fall(){
+       
+        setLocation(getX(), getY() + velDown);
+      
+        if(getY() >= 499){
+            ((Florest) getWorld()).removeObject(this);
+        }
+        else if(isTouching(Parrot.class)){
+            
+            Greenfoot.playSound("sounds/eat.mp3");
+           
+            Score.add();
+            
+            ((Florest) getWorld()).removeObject(this);
+        }
+        
+    }
+    
+}
+```
+
+Nesta classe é criado um método para fazer com que o cogumelo caia do céu durante o runtime do jogo
+
+```java
+
+private int velDown = 1;
+
+public void fall(){
+       
+        setLocation(getX(), getY() + velDown);
+      
+        if(getY() >= 499){
+            ((Florest) getWorld()).removeObject(this);
+        }
+        else if(isTouching(Parrot.class)){
+            
+            Greenfoot.playSound("sounds/eat.mp3");
+           
+            Score.add();
+            
+            ((Florest) getWorld()).removeObject(this);
+        }
+        
+    }
+```
+
+Neste método é definido a localização nos eixos X e Y com a variavel VelDown = 1 para xxxxxxxx (joão)
+
+É criado uma condicional para remover o objeto (cogumelo) na posição que seja maior ou igual a 499px. Senão quando o Parrot toca no cogumento, entra na condição para remover o cogumelo e tocar a mídia de som. 
+
+| Tipo              | Método                                 | Descrição                                                                                                      |
+| ----------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| void              | setLocation(getX(), getY() + velDown); | Atribui a localização do objeto com os valores de Eixo X e Y + a variavel VelDown, que atualmente representa 1 |
+| World             | getWorld();                            | Retorna o mundo que o actor (objeto) está                                                                      |
+| void              | removeObject(this);                    | Remove o objeto específico do mundo                                                                            |
+| protected boolean | isTouching(Parrot.class);              | Verifica se o objeto está tocando outro objeto de uma classe                                                   |
