@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Score
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Score\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ \ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Score\ here.\r\n\ \r\n\ @author\ (Jo\u00E3o\ Paulo\ S.\ Abreu\ (joaoabreu@ufba.br),\ Mateus\ C.\ Moura\r\n\ \ \ \ \ \ \ \ \ (mateuschaves@ufba.br),\ Rafael\ P.\ Casaes\ Sampaio\r\n\ \ \ \ \ \ \ \ \ (rafael.casaes@ufba.br),\r\n\ \ \ \ \ \ \ \ \ Uanderson\ S.\ Celestino\ (uandersoncelestino@ufba.br),\ L\u00EDlian\ T.\ de\r\n\ \ \ \ \ \ \ \ \ Sousa\ (lilian.sousa@ufba.br),\ Jefferson\ Aimon\ de\ B.\ Silva\r\n\ \ \ \ \ \ \ \ \ (jefferson.raimon@ufba.br))\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Score()
 comment2.params=
