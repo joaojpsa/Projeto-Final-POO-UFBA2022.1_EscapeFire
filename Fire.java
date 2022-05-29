@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Fire extends Actor
+public class Fire extends AllObjects
 {
     /*construtor*/
     public Fire(){

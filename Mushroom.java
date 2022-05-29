@@ -6,11 +6,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Mushroom extends Actor
+public class Mushroom extends AllObjects
 {
     //Contrutor do Mushroom
     public Mushroom(){
         setImage("cogumelo.png");
+        scaleImage(2,2);
     }
     //variavel usada no metodo fall(cair)
     private int velDown = 1;

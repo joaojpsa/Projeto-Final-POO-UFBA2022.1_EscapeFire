@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class GameOver extends Actor
+public class GameOver extends AllObjects
 {
     /**
      * Act - do whatever the GameOver wants to do. This method is called whenever

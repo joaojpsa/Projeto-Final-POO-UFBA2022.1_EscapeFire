@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version  (a version number or a date)
  */
-public class Score extends Actor
+public class Score extends AllObjects
 {
     //variavel para somar os pontos
     private static int ponto = 0;
