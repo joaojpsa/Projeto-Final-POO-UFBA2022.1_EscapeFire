@@ -22,12 +22,7 @@ public class Score extends Actor
         florest.showText("" + ponto, 60, 475);
 
     }
-    public int getPonto() {
-        return ponto;
-  }
-    public void getPonto(int ponto) {
-        this.ponto = ponto;
-  }
+    
   //método para contar os pontos
     public static void add(){
         ponto ++;
