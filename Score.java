@@ -9,10 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Score extends Actor
 {
     //variavel para somar os pontos
-    public static int ponto;
+    private static int ponto = 0;
     //método construtor
     public Score(){
-        ponto = 0;
+        
     }
     public void act()
     {
@@ -22,7 +22,13 @@ public class Score extends Actor
         florest.showText("" + ponto, 60, 475);
 
     }
-    //método para contar os pontos
+    public int getPonto() {
+        return ponto;
+  }
+    public void getPonto(int ponto) {
+        this.ponto = ponto;
+  }
+  //método para contar os pontos
     public static void add(){
         ponto ++;
     }

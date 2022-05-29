@@ -56,14 +56,11 @@ public class Parrot extends Actor
     //método para quando tocar nos objetos Fire e Vulture
     public void isTouch(){
         //condicionais utilizando metodo gameover através de getters e também chamando o metodo de midia de som do Greenfoot
-        if(isTouching(Fire.class)){
+        if(isTouching(Fire.class) || isTouching(Vulture.class)){
             Greenfoot.playSound("sounds/death.wav");
             ((Florest) getWorld()).gameOver();
         }
-        else if(isTouching(Vulture.class)){
-            Greenfoot.playSound("sounds/death.wav");
-            ((Florest) getWorld()).gameOver();
-        }
+        
     }
     
 }
