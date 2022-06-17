@@ -28,12 +28,11 @@ public class Mushroom extends AllObjects {
     public void act() {
         // metodo para o cogumelo cair a cada "velDown" determinado
         fall();
+        removeMushroom();
         // Add your action code here.
     }
 
-    public void fall() {
-        // metodo para fazer o cogumelo cair do ceu
-        setLocation(getX(), getY() + velDown);
+    public void removeMushroom() {
         // condicional para remover objeto na posição >= 499px
         if (getY() >= 499) {
             ((Florest) getWorld()).removeObject(this);
