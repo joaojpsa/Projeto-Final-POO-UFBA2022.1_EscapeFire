@@ -12,6 +12,7 @@ import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Mushroom extends AllObjects {
+    
     // Contrutor do Mushroom
     public Mushroom() {
         setImage("cogumelo.png");
@@ -29,7 +30,6 @@ public class Mushroom extends AllObjects {
         // metodo para o cogumelo cair a cada "velDown" determinado
         fall();
         removeMushroom();
-        // Add your action code here.
     }
 
     public void removeMushroom() {
@@ -44,7 +44,6 @@ public class Mushroom extends AllObjects {
             // se o papagaio tocar no cogumeloremove o mesmo
             ((Florest) getWorld()).removeObject(this);
         }
-
     }
 
 }
