@@ -41,7 +41,7 @@ public class Mushroom extends AllObjects {
             Greenfoot.playSound("sounds/eat.mp3");
             // serve para instanciar a variavel ponto da classe Score
             Score.add();
-            // se o papagaio tocar no cogumeloremove o mesmo
+            // se o papagaio tocar no cogumelo remove o mesmo
             ((Florest) getWorld()).removeObject(this);
         }
     }

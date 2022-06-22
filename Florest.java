@@ -51,17 +51,11 @@ public class Florest extends World {
         }
 
     }
-<<<<<<< HEAD
     
     public void playloop(){
        Greenfoot.playSound("sounds/theme.mp3");
-=======
-
-    public void playloop() {
-        Greenfoot.playSound("sounds/theme.mp3");
->>>>>>> main
     }
-
+    
     public void gameOver() {
         // metodo pra chamar a classe GameOver
         addObject(new GameOver("Game Over!"), getWidth() / 2, getHeight() / 2);

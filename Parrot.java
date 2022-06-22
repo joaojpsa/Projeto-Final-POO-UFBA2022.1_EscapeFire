@@ -29,12 +29,10 @@ public class Parrot extends AllObjects {
         fall();
         isTouch();
         moveParrot();
-
     }
 
     // método para movimentar o papagaio(direita, esquerda, para cima)
     private void moveParrot() {
-
         if (Greenfoot.isKeyDown("right")) {
             move(+1);
             setImage(new GreenfootImage("pDireita.png"));
@@ -48,7 +46,6 @@ public class Parrot extends AllObjects {
         if (Greenfoot.isKeyDown("up")) {
             moveUp();
         }
-
     }
 
     // movimenta para baixo(Y). É chamado no metodo act, tornando automático a
@@ -70,7 +67,5 @@ public class Parrot extends AllObjects {
             Greenfoot.playSound("sounds/death.wav");
             ((Florest) getWorld()).gameOver();
         }
-
     }
-
 }
