@@ -11,6 +11,7 @@ import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  *         (jefferson.raimon@ufba.br))
  * @version (a version number or a date)
  */
+//classe com metodos que serão herdados pelos objetos
 public class AllObjects extends Actor {
     
     int horScale;
