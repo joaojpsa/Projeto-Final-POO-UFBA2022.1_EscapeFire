@@ -38,7 +38,7 @@ public class AllObjects extends Actor {
         setLocation(getX(), getY() + velDown);
     }
      
-    // método para movimentar o objeto(direita, esquerda, para cima)
+    // metodo para movimentar o objeto(direita, esquerda, para cima)
     public void movers() {
         if (Greenfoot.isKeyDown("right")) {
             move(+1);
