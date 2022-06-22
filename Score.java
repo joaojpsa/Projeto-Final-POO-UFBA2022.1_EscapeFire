@@ -19,7 +19,6 @@ public class Score extends AllObjects {
     public Score() {
 
     }
-
     public void act() {
         // instancia o objeto na posição escolhida utilizando florest do tipo World, usa
         // setter para colocar uma imagem
@@ -32,6 +31,7 @@ public class Score extends AllObjects {
     // método para contar os pontos
     public static void add() {
         ponto++;
+        
     }
 
 }
