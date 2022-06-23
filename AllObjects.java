@@ -59,4 +59,14 @@ public class AllObjects extends Actor {
     public void moveUp() {
         setLocation(getX(), getY() - up);
     }
+    
+    public void moveEnemies() {
+        // método usado para movimentar o objeto horizontalmente(X), 
+        // sendo da direita para esquerda(-1)
+        setLocation(getX() - velDown, getY());
+        // condicional para remover objeto na posição <=15px
+        if (getX() <= 15) {
+            ((Florest) getWorld()).removeObject(this);
+        }
+    }
 }
