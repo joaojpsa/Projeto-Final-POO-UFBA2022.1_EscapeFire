@@ -1,7 +1,7 @@
 import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Cloud here.
+ * Classe Cloud
  * 
  * @author (João Paulo S. Abreu (joaoabreu@ufba.br), Mateus C. Moura
  *         (mateuschaves@ufba.br), Rafael P. Casaes Sampaio
