@@ -25,10 +25,6 @@ public class Fire extends AllObjects {
     public void act() {
         // método usado para movimentar o objeto horizontalmente(X), sendo da direita
         // para esquerda(-1)
-        setLocation(getX() - 1, getY());
-        // condicional para remover objeto na posição <=15px
-        if (getX() <= 15) {
-            ((Florest) getWorld()).removeObject(this);
-        }
+        moveEnemies();
     }
 }
