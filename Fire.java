@@ -16,15 +16,25 @@ public class Fire extends AllObjects {
     public Fire() {
         // chama a imagem referente a classe, através de setter
         setImage("fogo.png");
+        //chama o metodo para redimensionar
+        scaleImage(2, 2);
     }
 
     /**
      * Act - do whatever the fire2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    @Override
     public void act() {
         // método usado para movimentar o objeto horizontalmente(X), sendo da direita
         // para esquerda(-1)
         moveEnemies();
+    }
+    //método que foi herdado, aonde seu comportamento na classe Pai, se difere do seu comportamento na classe filha
+    @Override
+    public void scaleImage(int x, int y) {
+        horScale = x;
+        vertScale = y;
+        getImage().scale(getImage().getWidth() / horScale, getImage().getHeight() / vertScale);
     }
 }

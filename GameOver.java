@@ -16,14 +16,16 @@ public class GameOver extends AllObjects {
      * Act - do whatever the GameOver wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    //constantes para formatação da mensagem
     public static final float SIZE_FONT = 48.0f;
     public static final int WIDTH = 400;
     public static final int HEIGHT = 300;
-
+    
+    //metodo que chama a mensagem instanciada
     public GameOver(String message) {
         makeImage(message);
     }
-
+    //metodo para a criação da mensagem
     private void makeImage(String message) {
         GreenfootImage image = new GreenfootImage(WIDTH, HEIGHT);
 
@@ -40,8 +42,9 @@ public class GameOver extends AllObjects {
         image.drawString(message, 60, 100);
         setImage(image);
     }
-
+    @Override
     public void act() {
+        
         // Add your action code here.
     }
 

@@ -1,10 +1,14 @@
 #BlueJ class context
 comment0.target=Score
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Score\ here.\r\n\ \r\n\ @author\ (Jo\u00E3o\ Paulo\ S.\ Abreu\ (joaoabreu@ufba.br),\ Mateus\ C.\ Moura\r\n\ \ \ \ \ \ \ \ \ (mateuschaves@ufba.br),\ Rafael\ P.\ Casaes\ Sampaio\r\n\ \ \ \ \ \ \ \ \ (rafael.casaes@ufba.br),\r\n\ \ \ \ \ \ \ \ \ Uanderson\ S.\ Celestino\ (uandersoncelestino@ufba.br),\ L\u00EDlian\ T.\ de\r\n\ \ \ \ \ \ \ \ \ Sousa\ (lilian.sousa@ufba.br),\ Jefferson\ Aimon\ de\ B.\ Silva\r\n\ \ \ \ \ \ \ \ \ (jefferson.raimon@ufba.br))\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Score\ here.\n\ \n\ @author\ (Jo\u00E3o\ Paulo\ S.\ Abreu\ (joaoabreu@ufba.br),\ Mateus\ C.\ Moura\n\ \ \ \ \ \ \ \ \ (mateuschaves@ufba.br),\ Rafael\ P.\ Casaes\ Sampaio\n\ \ \ \ \ \ \ \ \ (rafael.casaes@ufba.br),\n\ \ \ \ \ \ \ \ \ Uanderson\ S.\ Celestino\ (uandersoncelestino@ufba.br),\ L\u00EDlian\ T.\ de\n\ \ \ \ \ \ \ \ \ Sousa\ (lilian.sousa@ufba.br),\ Jefferson\ Aimon\ de\ B.\ Silva\n\ \ \ \ \ \ \ \ \ (jefferson.raimon@ufba.br))\n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=Score()
 comment2.params=
-comment2.target=void\ act()
+comment2.target=void\ ScoreElse()
 comment3.params=
-comment3.target=void\ add()
-numComments=4
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ add()
+comment5.params=
+comment5.target=void\ removePonto()
+numComments=6

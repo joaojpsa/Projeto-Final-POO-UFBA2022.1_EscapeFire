@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=GunMush
+comment0.text=\n\ Write\ a\ description\ of\ class\ GunMush\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=GunMush()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ Act\ -\ do\ whatever\ the\ GunMush\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment3.params=
+comment3.target=void\ gunMushMove()
+comment4.params=
+comment4.target=void\ hitEnemy()
+numComments=5

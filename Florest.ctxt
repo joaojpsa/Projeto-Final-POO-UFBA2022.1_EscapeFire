@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Florest
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (Jo\u00E3o\ Paulo\ S.\ Abreu\ (joaoabreu@ufba.br),\ Mateus\ C.\ Moura\r\n\ \ \ \ \ \ \ \ \ (mateuschaves@ufba.br),\ Rafael\ P.\ Casaes\ Sampaio\r\n\ \ \ \ \ \ \ \ \ (rafael.casaes@ufba.br),\r\n\ \ \ \ \ \ \ \ \ Uanderson\ S.\ Celestino\ (uandersoncelestino@ufba.br),\ L\u00EDlian\ T.\ de\r\n\ \ \ \ \ \ \ \ \ Sousa\ (lilian.sousa@ufba.br),\ Jefferson\ Aimon\ de\ B.\ Silva\r\n\ \ \ \ \ \ \ \ \ (jefferson.raimon@ufba.br))\r\n\ \ \ \ \ \ \ \ \ *\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\n\ \n\ @author\ (Jo\u00E3o\ Paulo\ S.\ Abreu\ (joaoabreu@ufba.br),\ Mateus\ C.\ Moura\n\ \ \ \ \ \ \ \ \ (mateuschaves@ufba.br),\ Rafael\ P.\ Casaes\ Sampaio\n\ \ \ \ \ \ \ \ \ (rafael.casaes@ufba.br),\n\ \ \ \ \ \ \ \ \ Uanderson\ S.\ Celestino\ (uandersoncelestino@ufba.br),\ L\u00EDlian\ T.\ de\n\ \ \ \ \ \ \ \ \ Sousa\ (lilian.sousa@ufba.br),\ Jefferson\ Aimon\ de\ B.\ Silva\n\ \ \ \ \ \ \ \ \ (jefferson.raimon@ufba.br))\n\ \ \ \ \ \ \ \ \ *\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=Florest()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\n\ \n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=

@@ -1,7 +1,7 @@
 import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Classe Cloud
+ * Write a description of class Cloud here.
  * 
  * @author (João Paulo S. Abreu (joaoabreu@ufba.br), Mateus C. Moura
  *         (mateuschaves@ufba.br), Rafael P. Casaes Sampaio
@@ -22,15 +22,11 @@ public class Cloud extends AllObjects {
      * Act - do whatever the Cloud wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-
+    @Override
     public void act() {
         // método usado para movimentar o objeto horizontalmente(X), sendo da direita
         // para esquerda(-1)
-        setLocation(getX() - 1, getY());
-        // condicional para remover objeto na posição <=15px
-        if (getX() <= 15) {
-            ((Florest) getWorld()).removeObject(this);
-        }
+        moveEnemies();
     }
 
 }

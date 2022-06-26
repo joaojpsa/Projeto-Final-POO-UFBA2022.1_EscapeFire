@@ -12,6 +12,7 @@ import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  *         * @version (a version number or a date)
  */
 public class Florest extends World {
+
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -30,11 +31,14 @@ public class Florest extends World {
     public void act() {
         // metodo atualiza as açoes do jogo, instanciando as classes
         if (Greenfoot.getRandomNumber(500) < 1) {
-            addObject(new Cloud(), 536, Greenfoot.getRandomNumber(91));
             addObject(new Fire(), 637, 331);
             addObject(new Vulture(), 570, 15);
             addObject(new Mushroom(), 470, 47);
 
+        }
+        if (Greenfoot.getRandomNumber(200) < 1) {
+            addObject(new Cloud(), 536, Greenfoot.getRandomNumber(91));
+ 
         }
         if (Greenfoot.getRandomNumber(600) < 1) {
             addObject(new Fire(), 606, 445);
@@ -49,19 +53,28 @@ public class Florest extends World {
         if (Greenfoot.getRandomNumber(700) < 1) {
             addObject(new Vulture(), 552, Greenfoot.getRandomNumber(95));
         }
+        if (Greenfoot.getRandomNumber(200) < 1) {
+            addObject(new Vulture(), 665, Greenfoot.getRandomNumber(189));
+        }
 
     }
-    
-    public void playloop(){
-       Greenfoot.playSound("sounds/theme.mp3");
+    //tocar trilha sonora
+    public void playloop() {
+        Greenfoot.playSound("sounds/theme.mp3");
     }
-    
+
     public void gameOver() {
         // metodo pra chamar a classe GameOver
         addObject(new GameOver("Game Over!"), getWidth() / 2, getHeight() / 2);
         Greenfoot.playSound("sounds/end.wav");
         Greenfoot.stop();
+        Score.removePonto();
 
     }
-
+    
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    
 }
