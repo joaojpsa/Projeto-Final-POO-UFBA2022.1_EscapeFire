@@ -27,11 +27,15 @@ Conheça o papagaio guloso Parrot, que adora voar e comer cogumelos (muitos). Po
 
 ##### Jogabilidade
 
-Teclado: Seta para Cima - Parrot vai para cima
+Teclado: 
+
+Seta para Cima - Parrot vai para cima
 
 Seta para esquerda - Parrot vai para esquerda
 
 Seta para direita - Parrot vai para direita
+
+Espaço - Arremessa cogumelos nos inimigos
 
 
 
