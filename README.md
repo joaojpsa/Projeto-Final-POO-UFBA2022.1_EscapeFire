@@ -40,7 +40,7 @@ Espaço - Arremessa cogumelos nos inimigos
 
 
 
-##### Personagens
+#### Personagens
 
 ![parrot.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/images/papagaio.png)
 
