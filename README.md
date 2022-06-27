@@ -48,19 +48,18 @@ Parrot - O papagaio guloso e o protagonista
 
 
 
-![urubu.png]([https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/urubu.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/images/urubu.png)
-
+![urubu.png]([https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/urubu.png)
 Urubu - Antagonistas, não gostam do Parrot
 
 
 
-![fogo.png]([https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/fogo.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/images/fogo.png)
+![fogo.png]([https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/fogo.png)
 
 Fogo Místico - Não se importam com nada a não ser queimar tudo o que tiver no seu caminho. **Cuidado!**
 
 
 
-![cogumelo.png]([https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/cogumelo.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/images/cogumeloMENOR.png)
+![cogumelo.png]([https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/cogumelo.png)
 
 Cogumelo - A comida favorita do Parrot (**tente comer todas!**)
 
