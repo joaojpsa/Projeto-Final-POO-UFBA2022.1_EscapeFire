@@ -29,7 +29,7 @@ Parrot, o papagaio pode arremessar seus cogumelos para se defender dos urubus.
 ### Jogabilidade
 
 |Teclado:           |                                 |
-
+|-------------------|---------------------------------|
 |Seta para Cima     | Parrot vai para cima            |
 
 |Seta para esquerda | Parrot vai para esquerda        |
