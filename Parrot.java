@@ -1,6 +1,6 @@
 import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import greenfoot.World;
-
+import java.util.logging.Logger;
 /**
  * Write a description of class parrot here.
  * 
@@ -14,6 +14,7 @@ import greenfoot.World;
  */
 public class Parrot extends AllObjects {
     boolean shoot = true;
+    private static final Logger log = Logger.getLogger(Parrot.class.getName());
     /* construtor */
     public Parrot() {
         setImage("pDireita.png");
@@ -32,6 +33,7 @@ public class Parrot extends AllObjects {
         shootMush();
     }
 
+   
     // método para quando tocar nos objetos Fire e Vulture
     public void isTouch() {
         // condicionais utilizando metodo gameover através de getters e também chamando
@@ -41,14 +43,14 @@ public class Parrot extends AllObjects {
             ((Florest) getWorld()).gameOver();
             
         }
-    }catch (Exception ex) {
-      System.out.println("ERRO AO EXECUTAR O JOGO");
+    }catch (SecurityException se) {
+      log.info("ERRO AO EXECUTAR O JOGO");
     }
     
     }
     //metodo para atirar nos inimigos
     public void shootMush(){
-        if(Greenfoot.isKeyDown("space") && shoot == true){
+        if(Greenfoot.isKeyDown("space") && shoot){
             Greenfoot.playSound("sounds/tiro.mp3");
             getWorld().addObject(new GunMush(), getX() - 3, getY());
             shoot = false;
