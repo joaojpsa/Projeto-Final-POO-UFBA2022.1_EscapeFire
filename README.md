@@ -49,6 +49,7 @@ Parrot - O papagaio guloso e o protagonista
 
 
 ![urubu.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/images/urubu.png)
+
 Urubu - Antagonistas, não gostam do Parrot
 
 
