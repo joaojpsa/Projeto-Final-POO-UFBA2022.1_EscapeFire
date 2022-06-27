@@ -26,17 +26,17 @@ Objetivo do jogo: Voar e comer cogumelos, evitar treta com os urubus e passar be
 Conheça o papagaio guloso Parrot, que adora voar e comer cogumelos (muitos). Porém na sua querida floresta está ocorrendo uma terrivel queimada e há diversos urubus na localidade que não gostam dele. Ajude-o a se alimentar com cuidado, evitando o fogo e esses urubus.
 Parrot, o papagaio pode arremessar seus cogumelos para se defender dos urubus.
 
-##### Jogabilidade
+### Jogabilidade
 
-Teclado: 
+|Teclado:           |                                 |
 
-Seta para Cima - Parrot vai para cima
+|Seta para Cima     | Parrot vai para cima            |
 
-Seta para esquerda - Parrot vai para esquerda
+|Seta para esquerda | Parrot vai para esquerda        |
 
-Seta para direita - Parrot vai para direita
+|Seta para direita  | Parrot vai para direita         |
 
-Espaço - Arremessa cogumelos nos inimigos
+|Espaço             | Arremessa cogumelos nos inimigos|
 
 
 
