@@ -35,7 +35,11 @@ Parrot, o papagaio pode arremessar seus cogumelos para se defender dos urubus.
 |Seta para direita  | Parrot vai para direita         |
 |Espaço             | Arremessa cogumelos nos inimigos|
 
+## Cenário
 
+![Fdia.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/images/Fdia.png)
+
+Floresta - lar do Parrot
 
 ## Personagens
 
