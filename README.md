@@ -68,7 +68,7 @@ Cogumelo - A comida favorita do Parrot (**tente comer todas!**)
 
 #### Estrutura geral do Jogo
 
-![estrutura.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/estrutura.png)
+![estrutura.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/images/struct.png)
 
 ### **World**
 
