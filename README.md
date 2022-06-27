@@ -61,7 +61,9 @@ Fogo Místico - Não se importam com nada a não ser queimar tudo o que tiver no
 
 Cogumelo - A comida favorita do Parrot (**tente comer todas!**)
 
+![gunmush.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/images/gunmush.png)
 
+Gunmush - cogumelos que podem ser arremessados contra os inimigos
 
 #### Estrutura geral do Jogo
 
