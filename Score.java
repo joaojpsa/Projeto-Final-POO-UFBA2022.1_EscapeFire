@@ -17,7 +17,7 @@ public class Score extends AllObjects {
 
     // método construtor
     public Score() {
-        //sem necessidade de instanciar
+        //construtor padrão
     }
     public void ScoreElse() {
     
