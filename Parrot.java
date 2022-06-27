@@ -44,7 +44,8 @@ public class Parrot extends AllObjects {
             
         }
     }catch (SecurityException se) {
-      log.info("ERRO AO EXECUTAR O JOGO");
+        //exceção caso não seja executado a condição
+        log.info("ERRO AO EXECUTAR O JOGO");
     }
     
     }
