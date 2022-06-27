@@ -13,7 +13,7 @@ Projeto final da disciplina MATA55 2022.1 - UFBA
 
 O projeto consiste em um jogo chamado Escape Fire.
 
-Plataforma: Web / Greenfoot !(https://www.greenfoot.org/scenarios/29872)
+Plataforma: Web / Greenfoot -> https://www.greenfoot.org/scenarios/29872
 
 Linguagem de Programação utilizada: Java
 
