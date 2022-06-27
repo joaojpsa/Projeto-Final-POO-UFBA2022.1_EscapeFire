@@ -42,7 +42,7 @@ Espaço - Arremessa cogumelos nos inimigos
 
 ##### Personagens
 
-![parrot.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/doc/images-docs/parrot.png)
+![parrot.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/images/papagaio.png)
 
 Parrot - O papagaio guloso e o protagonista
 
