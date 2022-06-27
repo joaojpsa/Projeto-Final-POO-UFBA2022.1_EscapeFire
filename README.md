@@ -28,19 +28,16 @@ Parrot, o papagaio pode arremessar seus cogumelos para se defender dos urubus.
 
 ### Jogabilidade
 
-|Teclado:           |                                 |
+|TECLADO            |AÇÕES                            |
 |-------------------|---------------------------------|
 |Seta para Cima     | Parrot vai para cima            |
-
 |Seta para esquerda | Parrot vai para esquerda        |
-
 |Seta para direita  | Parrot vai para direita         |
-
 |Espaço             | Arremessa cogumelos nos inimigos|
 
 
 
-#### Personagens
+## Personagens
 
 ![parrot.png](https://github.com/joaojpsa/Projeto-Final-POO-UFBA2022.1_EscapeFire/blob/main/images/papagaio.png)
 
