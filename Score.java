@@ -21,14 +21,14 @@ public class Score extends AllObjects {
     }
     public void ScoreElse() {
     
-        //Lançado para indicar que a operação solicitada não é suportada.
+        //Exceção Lançada para indicar que a operação solicitada não é suportada.
         throw new UnsupportedOperationException();
     }
 
     @Override
     public void act() {
         // instancia o objeto na posição escolhida utilizando florest do tipo World, usa
-        // setter para colocar uma imagem
+        // setter para adicionar uma imagem
         World florest = getWorld();
         setImage("cogumeloMENOR.png");
         florest.showText("" + ponto, 60, 475);
@@ -36,10 +36,11 @@ public class Score extends AllObjects {
     }
 
     // método para contar os pontos
+    
     public static void add() {
         ponto++; 
     }
-    //método para zerar os pontos se "GAME OVER"
+    //método para zerar pontuação se "GAME OVER"
     public static void removePonto(){
         ponto -= ponto;
     }
